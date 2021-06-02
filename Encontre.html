@@ -13,34 +13,38 @@
     <main>
         <form action="get">
             <div class="datos-mascota">
-                <p class="titulo">Mi mascota es un/una...</p>
-                <div class="especie">
-                    <label for="perro">Perro</label>
-                    <input type="radio" id="perro" name="especie" value="">
-                </div>
-                <div class="especie">
-                    <label for="gato">Gato</label>
-                    <input type="radio" id="gato" name="especie" value="">
-                </div>
-                <div class="especie">
-                    <label for="ave">Ave</label>
-                    <input type="radio" id="ave" name="especie" value="">
-                </div>
-                <div class="especie">
-                    <label for="tortuga">Tortuga</label>
-                    <input type="radio" id="tortuga" name="especie" value="">
-                </div>
-                <div class="especie">
-                    <label for="roedor">Roedor</label>
-                    <input type="radio" id="roedor" name="especie" value="">
-                </div>
-                <div class="especie">
-                    <label for="lagarto">Lagarto</label>
-                    <input type="radio" id="lagarto" name="especie" value="">
-                </div>
-                <div class="especie">
-                    <label for="serpiente">Serpiente</label>
-                    <input type="radio" id="serpiente" name="especie" value="">
+                <div class="selec-especie">
+                    <p class="titulo">Mi mascota es un/una...</p>
+                    <div class="especie-lista">
+                        <div class="especie">
+                            <input type="radio" id="perro" name="especie" value="">
+                            <label for="perro"><i class="fas fa-dog"></i>Perro</label>
+                        </div>
+                        <div class="especie">
+                            <input type="radio" id="gato" name="especie" value="">
+                            <label for="gato"><i class="fas fa-cat"></i>Gato</label>
+                        </div>
+                        <div class="especie">
+                            <input type="radio" id="ave" name="especie" value="">
+                            <label for="ave"><i class="fas fa-kiwi-bird"></i>Ave</label>
+                        </div>
+                        <div class="especie">
+                            <input type="radio" id="tortuga" name="especie" value="">
+                            <label for="tortuga"><i class="fas fa-hippo"></i>Tortuga</label>
+                        </div>
+                        <div class="especie">
+                            <input type="radio" id="roedor" name="especie" value="">
+                            <label for="roedor"><i class="fas fa-otter"></i>Roedor</label>
+                        </div>
+                        <div class="especie">
+                            <input type="radio" id="lagarto" name="especie" value="">
+                            <label for="lagarto"><i class="fas fa-frog"></i>Lagarto</label>
+                        </div>
+                        <div class="especie">
+                            <input type="radio" id="serpiente" name="especie" value="">
+                            <label for="serpiente"><i class="fas fa-dragon"></i>Serpiente</label>
+                        </div>
+                    </div>
                 </div>
                 <div class="raza">
                     <p class="titulo">¿Es de raza?</p>
@@ -88,71 +92,65 @@
                         <input type="checkbox" id="norecuerdoraza" name="norecuerdoraza">
                     </div>
                 </div>
-                <div class="identificacion">
-                    <div class="nombre">
-                        <label for="nombre" class="titulo">Responde al nombre de...</label>
-                        <input type="text">
-                    </div>
-                    <div class="norecuerdo">
-                        <label for="norecuerdonombre">No se / No recuerdo en este momento</label>
-                        <input type="checkbox" id="norecuerdonombre" name="norecuerdonombre">
-                    </div>
-                </div>
-                <div class="cuando">
-                    <div class="fecha"></div>
-                    <label for="fecha" class="titulo">Se perdio en la fecha de</label>
-                    <input type="datetime-local" id="fecha" name="fecha">
-                    <em>La hora no necesariamente debe ser exacta</em>
+            </div>
+            <div class="identificacion">
+                <div class="nombre">
+                    <label for="nombre" class="titulo">Responde al nombre de...</label>
+                    <input type="text">
                 </div>
                 <div class="norecuerdo">
-                    <label for="norecuerdocuando">No se / No recuerdo en este momento</label>
-                    <input type="checkbox" id="norecuerdocuando" name="norecuerdocuando">
+                    <label for="norecuerdonombre">No se / No recuerdo en este momento</label>
+                    <input type="checkbox" id="norecuerdonombre" name="norecuerdonombre">
                 </div>
-                <div class="castrado">
-                    <p class="titulo">¿Esta castrad@?</p>
-                    <input type="radio" id="siesta" name="castrado-pregunta">
-                    <label for="siesta">Si, si lo esta</label>
-                    <input type="radio" id="noesta" name="castrado-pregunta">
-                    <label for="noesta">No, no lo esta</label>
-                    <input type="radio" id="nolose" name="castrado-pregunta">
-                    <label for="nolose">No se / No recuerdo</label>
+            </div>
+            <div class="cuando">
+                <div class="fecha"></div>
+                <label for="fecha" class="titulo">Se perdio en la fecha de</label>
+                <input type="datetime-local" id="fecha" name="fecha">
+                <em>La hora no necesariamente debe ser exacta</em>
+            </div>
+            <div class="norecuerdo">
+                <label for="norecuerdocuando">No se / No recuerdo en este momento</label>
+                <input type="checkbox" id="norecuerdocuando" name="norecuerdocuando">
+            </div>
+            <div class="castrado">
+                <p class="titulo">¿Esta castrad@?</p>
+                <input type="radio" id="siesta" name="castrado-pregunta">
+                <label for="siesta">Si, si lo esta</label>
+                <input type="radio" id="noesta" name="castrado-pregunta">
+                <label for="noesta">No, no lo esta</label>
+                <input type="radio" id="nolose" name="castrado-pregunta">
+                <label for="nolose">No se / No recuerdo</label>
+            </div>
+            <div class="correa">
+                <p class="titulo">¿Llevaba algo de la siguiente lista la ultima vez que lo vio?</p>
+                <em>Seleccione todas las que correspondan.</em>
+                <input type="checkbox" id="collar" name="collar">
+                <label for="collar">Collar</label>
+                <input type="checkbox" id="pechera" name="pechera">
+                <label for="pechera">Pechera</label>
+                <input type="checkbox" id="correa" name="correa">
+                <label for="correa">Correa</label>
+                <input type="checkbox" id="identificador" name="identificador">
+                <label for="identificador">Identificador*</label>
+                <input type="checkbox" id="ropa" name="ropa">
+                <label for="ropa">Ropa</label>
+                <em>*Alguna clase de "chapita" con el nombre y/o direccion de la mascota.</em>
+            </div>
+            <div class="fotos">
+                <p class="titulo">Suba hasta 10 fotos, la primera debe ser la principal. Se recomienda que sea una foto cuerpo completo de su mascota</p>
+                <div class="cuadro">
+                    <span></span><span></span><span></span>
                 </div>
-                <div class="correa">
-                    <p class="titulo">¿Llevaba algo de la siguiente lista la ultima vez que lo vio?</p>
-                    <em>Seleccione todas las que correspondan.</em>
-                    <input type="checkbox" id="collar" name="collar">
-                    <label for="collar">Collar</label>
-                    
-                    <input type="checkbox" id="pechera" name="pechera">
-                    <label for="pechera">Pechera</label>
-
-                    <input type="checkbox" id="correa" name="correa">                    
-                    <label for="correa">Correa</label>
-
-                    <input type="checkbox" id="identificador" name="identificador">
-                    <label for="identificador">Identificador*</label>
-
-                    <input type="checkbox" id="ropa" name="ropa">
-                    <label for="ropa">Ropa</label>
-
-                    <em>*Alguna clase de "chapita" con el nombre y/o direccion de la mascota.</em>
-                    
-
-                </div>
-                <div class="fotos">
-                    <p class="titulo">Suba hasta 10 fotos, la primera debe ser la principal. Se recomienda que sea una foto cuerpo completo de su mascota</p>
-                    <div class="cuadro">
-                        <span></span><span></span><span></span>
-                    </div>
-                    <input name="uploadedfile" type="file" />
-                    <input type="submit" value="Subir archivo" />
-                    <label for="caracteristica" class="titulo">Su su mascota tenia alguna caracteristica especial que desee detallar, hagalo en el cuadro de abajo.</label>
-                    <textarea name="caracteristica" id="caracteristica" cols="30" rows="10" placeholder="Ejemplo: mancha con forma de corazon en al pecho, cicatriz de castracion"></textarea>
-                </div>
-                <div class="mapa">
-                    <p class="titulo">Señala donde lo viste por ultima vez</p>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7121.571392862076!2d-65.2181429166667!3d-26.814951499999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1622657261533!5m2!1ses!2sar" width="900" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                </div>
+                <input name="uploadedfile" type="file" />
+                <input type="submit" value="Subir archivo" />
+                <label for="caracteristica" class="titulo">Su su mascota tenia alguna caracteristica especial que desee detallar, hagalo en el cuadro de abajo.</label>
+                <textarea name="caracteristica" id="caracteristica" cols="30" rows="10" placeholder="Ejemplo: mancha con forma de corazon en al pecho, cicatriz de castracion"></textarea>
+            </div>
+            <div class="mapa">
+                <p class="titulo">Señala donde lo viste por ultima vez</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7121.571392862076!2d-65.2181429166667!3d-26.814951499999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1622657261533!5m2!1ses!2sar" width="900" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
             </div>
             <div class="datos-duenio">
                 <p class="titulo">¿Con quien comunicarse en caso de tener informacion sobre tu mascota?</p>

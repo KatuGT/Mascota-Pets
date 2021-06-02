@@ -10,76 +10,113 @@
 <body>
     <main>
         <form action="get">
-            <p>Mi mascota es un/una...</p>
-            <div class="especie">
-                <label for="perro">Perro</label>
-                <input type="radio" id="perro" name="especie" value="">
+            <div class="datos-mascota">
+                <p>Mi mascota es un/una...</p>
+                <div class="especie">
+                    <label for="perro">Perro</label>
+                    <input type="radio" id="perro" name="especie" value="">
+                </div>
+                <div class="especie">
+                    <label for="gato">Gato</label>
+                    <input type="radio" id="gato" name="especie" value="">
+                </div>
+                <div class="especie">
+                    <label for="ave">Ave</label>
+                    <input type="radio" id="ave" name="especie" value="">
+                </div>
+                <div class="especie">
+                    <label for="tortuga">Tortuga</label>
+                    <input type="radio" id="tortuga" name="especie" value="">
+                </div>
+                <div class="especie">
+                    <label for="roedor">Roedor</label>
+                    <input type="radio" id="roedor" name="especie" value="">
+                </div>
+                <div class="especie">
+                    <label for="lagarto">Lagarto</label>
+                    <input type="radio" id="lagarto" name="especie" value="">
+                </div>
+                <div class="especie">
+                    <label for="serpiente">Serpiente</label>
+                    <input type="radio" id="serpiente" name="especie" value="">
+                </div>
+                <div class="raza">
+                    <p>¿Es de raza?</p>
+                    <input type="radio" id="nose" name="siono">
+                    <label for="nose">No lo se/No recuerdo</label>
+                    <input type="radio" id="no" name="siono">
+                    <label for="no">No es de raza, es mestizo</label>
+                    <label for="raza">Su raza es...</label>
+                    <select name="raza" id="">
+                        <option value="elige" disabled selected>Selecciona aqui</option>
+                        <option value="akita">Akita inu</option>
+                        <option value="american-staffordshire-terrier">American staffordshire terrier</option>
+                        <option value="beagle">Beagle</option>
+                        <option value="border-collie">Border collie</option>
+                        <option value="boxer">Boxer</option>
+                        <option value="bull-terrier">Bull terrier</option>
+                        <option value="bulldog frances">Bulldog francés</option>
+                        <option value="caniche">Caniche</option>
+                        <option value="chihuahua">Chihuahua</option>
+                        <option value="chow-chow">Chow chow</option>
+                        <option value="cockeringles">Cocker ingles</option>
+                        <option value="cockerspaniel">Cocker spaniel</option>
+                        <option value="salchica">Dachshund o perro salchicha</option>
+                        <option value="doberman">Doberman</option>
+                        <option value="dogoarg">Dogo Argentino</option>
+                        <option value="dogodeburdeos">Dogo de burdeos</option>
+                        <option value="filabrasileño">Fila brasileño</option>
+                        <option value="fox-terrier-pelo-duro">Fox terrier pelo duro</option>
+                        <option value="fox-terrier-pelo-liso">Fox terrier pelo liso</option>
+                        <option value="goldenretriver">Golden retriver</option>
+                        <option value="grandanes">Gran danes</option>
+                        <option value="husky">Husky o siveriano</option>
+                        <option value="labrador">Labrador</option>
+                        <option value="maltes">Maltes</option>
+                        <option value="Mastinnapolitano">Mastin napolitano</option>
+                        <option value="ovejero">Ovejero aleman / perro policia / manto negro</option>
+                        <option value="pinscher">Pinscher</option>
+                        <option value="rottweiller">Rottweiller</option>
+                        <option value="yorkshire">Yorkshire</option>
+                    </select>
+                    <label for="noaparece">Si la raza de tu perro no aparece en la lista, escribela aqui.</label>
+                    <input type="text" id="noaparece" name="noaparece">
+                    <div class="norecuerdo">
+                        <label for="norecuerdoraza">No se / No recuerdo en este momento</label>
+                        <input type="checkbox" id="norecuerdoraza" name="norecuerdoraza">
+                    </div>
+                </div>
+                <div class="identificacion">
+                    <div class="nombre">
+                        <label for="nombre">Responde al nombre de...</label>
+                        <input type="text">
+                    </div>
+                    <div class="norecuerdo">
+                        <label for="norecuerdonombre">No se / No recuerdo en este momento</label>
+                        <input type="checkbox" id="norecuerdonombre" name="norecuerdonombre">
+                    </div>
+                </div>
+                <div class="cuando">
+                    <div class="fecha"></div>
+                    <label for="fecha">Se perdio en la fecha de</label>
+                    <input type="datetime-local" id="fecha" name="fecha">
+                    <em>La hora no necesariamente debe ser exacta</em>
+                </div>
+                <div class="norecuerdo">
+                    <label for="norecuerdocuando">No se / No recuerdo en este momento</label>
+                    <input type="checkbox" id="norecuerdocuando" name="norecuerdocuando">
+                </div>
+                <div class="fotos">
+                    <p>Suba hasta 10 fotos, la primera debe ser la principal. Se recomienda que sea una foto cuerpo completo de su mascota</p>
+                    <div class="cuadro">
+                        <span></span><span></span><span></span>
+                    </div>
+                    <input name="uploadedfile" type="file" />
+                    <input type="submit" value="Subir archivo" />
+                    <label for="caracteristica">Su su mascota tenia alguna caracteristica especial que desee detallar, hagalo en el cuadro de abajo.</label>
+                    <textarea name="caracteristica" id="caracteristica" cols="30" rows="10" placeholder="Ejemplo: mancha con forma de corazon en al pecho, cicatriz de castracion"></textarea>
+                </div>
             </div>
-            <div class="especie">
-                <label for="gato">Gato</label>
-                <input type="radio" id="gato" name="especie" value="">
-            </div>
-            <div class="especie">
-                <label for="ave">Ave</label>
-                <input type="radio" id="ave" name="especie" value="">
-            </div>
-            <div class="especie">
-                <label for="tortuga">Tortuga</label>
-                <input type="radio" id="tortuga" name="especie" value="">
-            </div>
-            <div class="especie">
-                <label for="roedor">Roedor</label>
-                <input type="radio" id="roedor" name="especie" value="">
-            </div>
-            <div class="especie">
-                <label for="lagarto">Lagarto</label>
-                <input type="radio" id="lagarto" name="especie" value="">
-            </div>
-            <div class="especie">
-                <label for="serpiente">Serpiente</label>
-                <input type="radio" id="serpiente" name="especie" value="">
-            </div>
-            <div class="raza">
-                <p>¿Es de raza?</p>
-                <input type="radio" id="nose" name="siono">
-                <label for="nose">No lo se/No recuerdo</label>
-                <input type="radio" id="no" name="siono">
-                <label for="no">No es de raza, es mestizo</label>
-                <label for="raza">Su raza es...</label>
-                <select name="raza" id="">
-                    <option value="akita">Akita inu</option>
-                    <option value="american-staffordshire-terrier">American staffordshire terrier</option>
-                    <option value="beagle">Beagle</option>
-                    <option value="border-collie">Border collie</option>
-                    <option value="boxer">Boxer</option>
-                    <option value="bull-terrier">Bull terrier</option>
-                    <option value="bulldog frances">Bulldog francés</option>
-                    <option value="caniche">Caniche</option>
-                    <option value="chihuahua">Chihuahua</option>
-                    <option value="chow-chow">Chow chow</option>
-                    <option value="cockeringles">Cocker ingles</option>
-                    <option value="cockerspaniel">Cocker spaniel</option>
-                    <option value="salchica">Dachshund o perro salchicha</option>
-                    <option value="doberman">Doberman</option>
-                    <option value="dogoarg">Dogo Argentino</option>
-                    <option value="dogodeburdeos">Dogo de burdeos</option>
-                    <option value="filabrasileño">Fila brasileño</option>
-                    <option value="fox-terrier-pelo-duro">Fox terrier pelo duro</option>
-                    <option value="fox-terrier-pelo-liso">Fox terrier pelo liso</option>
-                    <option value="goldenretriver">Golden retriver</option>
-                    <option value="grandanes">Gran danes</option>
-                    <option value="husky">Husky o siveriano</option>
-                    <option value="labrador">Labrador</option>
-                    <option value="maltes">Maltes</option>
-                    <option value="Mastinnapolitano">Mastin napolitano</option>
-                    <option value="ovejero">Ovejero aleman / perro policia / manto negro</option>
-                    <option value="pinscher">Pinscher</option>
-                    <option value="rottweiller">Tottweiller</option>
-                    <option value="yorkshire">Yorkshire</option>
-                </select>
-                
-            </div>
-            <label for="nombre">Responde al nombre de...</label>
         </form>
     </main>
 </body>

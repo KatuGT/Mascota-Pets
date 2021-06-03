@@ -11,7 +11,6 @@ body {
 }
 
 main{
-	background: #eaeaea;
 }
 
 .titulo{
@@ -21,21 +20,59 @@ main{
 }
 
 /* lista de especies */
+
+.datos-mascota{
+  background: #e3e3e3;
+  padding: 1em;
+  max-width: 50%;
+}
+
+.info-mascota{
+  margin: 1.5em;
+}
+
+
+hr{
+  max-width: 50%;
+}
+
 .especie-lista{
-	display: flex;
-
+  display: flex;
 }
 
-.especie-lista input{
-	
+.especie-lista .fas{
+  font-size: 2em;
+  color: #0edc9f;
 }
 
+.especie-lista .especie{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background: #73f3be;
+  margin-right: 1em;  
+  height: 6em;
+  min-width: 7em;
+}
 
+.especie-lista .especie input{
+  display: none;
+}
 
-/*input[type="radio"]:checked {
+input[type="radio"]:checked {
   box-shadow: 0 0 0 3px orange;
 }
 
 input:checked + label{
-	background: black;
-}*/
+	color: green;
+}
+
+
+/* RAZA */
+.raza{
+  display: flex;
+  flex-direction: column;
+}
+
